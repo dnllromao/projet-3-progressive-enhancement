@@ -1,0 +1,42 @@
+/*@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}*/
+
+body {
+	font-family: 'Fauna One', serif;
+	font-size: 16px;
+	color: #232c33;
+	max-width: 90%;
+	margin: 0 auto;
+	/*background-color: #fcfcf9;*/
+
+	  background: -webkit-linear-gradient(180deg, rgba(163, 221, 222, 0.5
+	  	35), rgba(42, 66, 67, 0.35));
+	  background: linear-gradient(180deg, rgba(163, 221, 222, 0.35), rgba(42, 66, 67, 0.35));
+
+	background: linear-gradient(180deg, rgba(163, 221, 222, 0.35), rgba(42, 66, 67, 0.35)) url('http://68.media.tumblr.com/973fbad79a9d99e5426b55ab9c53956a/tumblr_n93jldbOdW1qfo01bo1_1280.jpg') no-repeat right bottom;
+
+	background-size: cover;
+}
+
+p, ul {
+	line-height: 1.5;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: #232c33;
+}
+
+blockquote {
+	max-width: 50%;
+	margin: 80px auto;
+	font-size: 160%;
+	border-left: solid #fe4a49 3px;
+	padding-left: 30px;
+	background-color: #c3c5c7;
+}
