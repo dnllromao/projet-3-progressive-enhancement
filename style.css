@@ -1,28 +1,37 @@
-/*@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}*/
+
+/* 
+*	background: color, image, repeat, attachment, position;
+*	background: linear-gradient(direction, color1, color2);
+*/
+
 
 body {
 	font-family: 'Fauna One', serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #232c33;
 	max-width: 90%;
 	margin: 0 auto;
-	/*background-color: #fcfcf9;*/
-
-	  background: -webkit-linear-gradient(180deg, rgba(163, 221, 222, 0.5
-	  	35), rgba(42, 66, 67, 0.35));
-	  background: linear-gradient(180deg, rgba(163, 221, 222, 0.35), rgba(42, 66, 67, 0.35));
-
-	background: linear-gradient(180deg, rgba(163, 221, 222, 0.35), rgba(42, 66, 67, 0.35)) url('http://68.media.tumblr.com/973fbad79a9d99e5426b55ab9c53956a/tumblr_n93jldbOdW1qfo01bo1_1280.jpg') no-repeat right bottom;
-
+	background: linear-gradient(12deg, rgba(161, 211, 244, 0.4), rgba(255, 255, 234, 0.4)), url('data:image/jpeg;base64,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') no-repeat fixed right bottom;
 	background-size: cover;
+}
+
+header h1 {
+	background: yellow;	
+}
+
+h1, h2 {
+	font-family: 'Raleway', sans-serif;	
 }
 
 p, ul {
 	line-height: 1.5;
 }
+
+table {
+	border-collapse: collapse;
+}
+
 
 img {
 	width: 100%;
@@ -32,6 +41,23 @@ a {
 	color: #232c33;
 }
 
+a:visited {
+	color: #b12221;
+}
+a:hover {
+	color: #fe4a49;
+}
+
+hr + p {
+	font-weight: bold;
+}
+
+ul + img , figure {
+	float: right;
+	margin-bottom: 15px;
+}
+
+/* citations */
 blockquote {
 	max-width: 50%;
 	margin: 80px auto;
@@ -39,4 +65,57 @@ blockquote {
 	border-left: solid #fe4a49 3px;
 	padding-left: 30px;
 	background-color: #c3c5c7;
+	margin-top: 180px;
 }
+q {
+	font-style: italic;
+	border-left: solid 3px;
+	padding-left: 30px;
+	display: block;
+	margin: 1em 0;
+}
+q.ferm {
+	border-color: #fe4a49;
+}
+q.vill {
+	border-color: #268ACB;
+}
+
+.bien, .mal {
+	text-transform: uppercase;
+}
+.mal {
+	color: #B12221;
+}
+.bien {
+	color: #10B13F;
+}
+
+/* table */
+tr:nth-child(even) {
+	background-color: #c3c5c7;
+}
+tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+/* list */
+li::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-right: 10px;
+}
+li:first-child::before {
+	background-image: url('https://github.com/becodeorg/BXLCentral/raw/master/Projects/3-progressive-enhancement/bien.png');
+}
+li:nth-child(2)::before {
+	background-image: url('https://github.com/becodeorg/BXLCentral/raw/master/Projects/3-progressive-enhancement/mal.png');
+}
+li:nth-child(3)::before {
+	background-image: url('https://github.com/becodeorg/BXLCentral/raw/master/Projects/3-progressive-enhancement/chat.png');
+}
+
