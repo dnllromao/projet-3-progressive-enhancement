@@ -1,0 +1,57 @@
+body {
+	font-size: 16px;
+	max-width: 50em;
+	margin: 0 auto;
+	color:#2e2f2f;
+	padding: 0 1em;
+}
+
+h1, h2 {
+	color: #00e;
+}
+
+h1 {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2.2em;
+}
+ h2 {
+ 	margin-top: 2em;
+ 	font-size: 1.6em;
+	text-indent: 1em;
+}
+
+figure {
+	text-align: center;
+}
+
+p, ul {
+	line-height: 1.5em;
+}
+
+ul.no-deco {
+	list-style: none;
+}
+
+pre {
+	background: #f7f7f7;
+	font-size: 0.8em;
+}
+
+a:hover {
+	color: white;
+	background: #00e;
+}
+
+.notes, figcaption {
+	color: #898989;
+	font-size: 0.9em
+}
+.notes {
+	margin-bottom: 2em;
+}
+
+.author {
+	font-size: 0.97em;
+}
+
