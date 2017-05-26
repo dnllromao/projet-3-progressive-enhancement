@@ -1,0 +1,148 @@
+body {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+header, footer {
+	background: #333;
+	color: #fff;
+	overflow: auto;
+	font-size: 0.9em;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+nav {
+	float: left;
+}
+nav ul {
+	margin: 0;
+	list-style: none;
+}
+nav li {
+	display: inline;
+	vertical-align: middle;
+	line-height: 35px;
+	text-transform: capitalize;
+	padding: 0 10px;
+}
+footer nav ul {
+	padding-left: 10px;
+}
+footer nav li {
+	padding: 0 7px;
+	border-right: 1px dotted #fff;
+}
+footer nav li:last-child {
+	border-right: none;
+}
+
+
+img {
+	vertical-align: middle;
+}
+
+.right {
+	float: right;
+	line-height: 35px;
+	padding-right: 1em;
+}
+
+header .right::before {
+	content: '\f2c0';
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+/* sections */
+
+section {
+	overflow: auto;
+	color: #fff;
+	text-align: center;
+	padding: 1.5em 0 2em 0;
+}
+section.blue {
+	background-color: #1e93cc;
+}
+section.grey {
+	background-color: #eee;
+}
+div[class^="col"] {
+	float: left;
+	box-sizing: border-box;
+}
+.col-2 {
+	width: 50%
+}
+.col-3 {
+	width: calc(100% / 3);
+}
+
+.col-3 p {
+	margin-bottom: 23px;
+}
+
+.col-2 {
+	text-align: left;
+	padding-right: 1em;
+}
+
+button {
+	display: block;
+	padding: 1em;
+	color: white;
+	border: 1px solid;
+	border-radius: 6px;
+	font-size: 1.17em;
+}
+button span {
+	text-transform: uppercase;
+}
+button.orange {
+	background-color: #e99002;
+	border-color: #fff;
+}
+button.blue {
+	background-color: #165882;
+	border-color: #7098b2;
+}
+button.yellow {
+	background-color: #e99002;
+	border-color: #f1ba64;
+}
+
+
+
+#banner button {
+	margin: 0 auto;
+}
+
+#features .wrapper{
+	width: calc(100% - 16em);
+	margin: 0 auto;
+}
+
+#sponsors .wrapper {
+	width: calc(100% - 18em);
+	margin: 0 auto;
+}
+#sponsors img {
+	display: inline-block;
+	margin-right: 1.5em;
+}
+#links {
+	min-height: 150px;
+}
+#links button {
+	display: inline-block;
+}
+
+.entre {
+	text-align: center;
+	padding: 1em;
+}
